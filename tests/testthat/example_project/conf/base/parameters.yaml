@@ -1,0 +1,7 @@
+# Here you can define all your parameters using YAML syntax
+# Example for base random forest model
+# 
+# n_estimators: 100
+# depth: 10
+# col_weight: 20
+# seed: 42
