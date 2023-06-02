@@ -6,46 +6,45 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+## Overview
+
 The goal of raptorML is to streamline the process of setting up machine
 learning projects by automating the creation of a well-organized project
 structure. The package asks for a project name and swiftly establishes a
-new directory structure for your project. This includes core directories
-like ‘conf’, ‘data’, ‘docs’, ‘logs’, ‘notebooks’, and ‘src’.
-
-Within the ‘conf’ directory, it creates ‘base’ and ‘credentials’
-subdirectories. For the ‘data’ directory, it provides ‘00_sql_files’,
-‘01_raw’, ‘02_processed’, and ‘03_model_ready’ subdirectories. These
-predefined structures help ensure consistent and organized management of
-your machine learning assets.
-
-The package also takes care of creating essential YAML files. This
-includes a ‘catalog.yaml’ and ‘parameters.yaml’ in the ‘conf/base’
-directory, along with a ‘credentials.yaml’ in the ‘conf/credentials’
-directory. These files lay the groundwork for managing your data
-catalog, parameters, and credentials respectively.
-
-Lastly, to facilitate project-level documentation and reproducibility,
-raptorML creates a ‘Readme.md’ file and an Rproj file, named after your
-project, in the root directory of the project.
+new directory structure for your project. Furthermore raptorML takes
+care of the data ingestion and executing of your code by providing
+production ready capabilities
 
 This package is designed with the aim of enhancing reproducibility,
 efficiency, and code reusability in machine learning projects, helping
 you to focus on what’s important - building and refining your machine
 learning models.
 
+Functions:
+
+- `forge()` Creates a directory structure and files for a data science
+  project.
+- `catalog_load()` Loads a catalog file that contains metadata about the
+  data sources used in a data science project.
+- `orchestrate()` Manages and coordinates the execution of different
+  steps in the data processing pipeline.
+
 ## Installation
 
-You can install the development version of raptorML like so:
+To get a bug fix or to use a feature from the development version, you
+can install the development version of raptorML from GitHub.
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("raptorML")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem:
+As raptor ML create folder structures we cant compile code here
+directly. Examples will follow…
 
-``` r
-library(raptorML)
-## basic example code
-```
+## Getting help
+
+If you encounter a clear bug, please file an issue with a minimal
+reproducible example on
+[GitHub](https://github.com/tidyverse/dplyr/issues).
