@@ -1,8 +1,8 @@
 ---
-title: "raptorML"
+title: "Introduction to raptorML"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{raptorML}
+  %\VignetteIndexEntry{Introduction to raptorML}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,6 +14,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(raptorML)
+# Introduction
+
+raptorML is a powerful package designed to streamline the machine learning process. This vignette provides an overview of the key features of raptorML and demonstrates how to use the package for machine learning projects.
+
+# Installation
+
+You can install raptorML from GitHub using the devtools package:
+
+``` r
+# library(devtools)
+# devtools::install_github("captnmarkus/raptorML")
 ```

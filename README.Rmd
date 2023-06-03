@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 The goal of raptorML is to streamline the process of setting up machine learning projects by automating the creation of a well-organized project structure. The package asks for a project name and swiftly establishes a new directory structure for your project. Furthermore raptorML takes care of the data ingestion and executing of your code by providing production ready capabilities
 
-This package is designed with the aim of enhancing reproducibility, efficiency, and code reusability in machine learning projects, helping you to focus on what's important - building and refining your machine learning models.
+This package is designed with the aim of enhancing reproducibility, efficiency, and code re-usability in machine learning projects, helping you to focus on what's important - building and refining your machine learning models.
 
 Functions:
 
@@ -43,7 +43,7 @@ To get a bug fix or to use a feature from the development version, you can insta
 ## Usage
 
 As raptor ML create folder structures we cant compile code here directly.
-However after the example execution and image of the structure gives an overview
+However after a quoted example code an image of the project structure should give you an intuition.
 
 ``` r
 # forge()
