@@ -2,7 +2,7 @@
 % Please edit documentation in R/orchestrate.R
 \name{orchestrate}
 \alias{orchestrate}
-\title{Run the 'main.R' script}
+\title{Run the '\emph{main}.R' script}
 \usage{
 orchestrate()
 }
@@ -10,7 +10,7 @@ orchestrate()
 None
 }
 \description{
-This function runs the 'main.R' file located in the 'src' directory. This is part of the project's
+This function runs the '\emph{main}.R' file located in the 'src' directory. This is part of the project's
 orchestration process, enabling the execution of a predefined workflow.
 Note: This function assumes that the working directory is set correctly.
 }
