@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # raptorML <img src="man/figures/logo.png" align="right" height="138" />
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/captnmarkus/raptorML/workflows/R-CMD-check/badge.svg)](https://github.com/captnmarkus/raptorML/actions)
 <!-- badges: end -->
 
 ## Overview
