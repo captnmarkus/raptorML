@@ -36,8 +36,8 @@ Functions:
 To get a bug fix or to use a feature from the development version, you can install the development version of raptorML from GitHub.
 
 ``` r
-# library(githubinstall)
-# githubinstall("raptorML")
+# library(devtools)
+# devtools::install_github("captnmarkus/raptorML")
 ```
 
 ## Usage
