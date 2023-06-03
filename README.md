@@ -35,13 +35,20 @@ To get a bug fix or to use a feature from the development version, you
 can install the development version of raptorML from GitHub.
 
 ``` r
-# install.packages("raptorML")
+# library(githubinstall)
+# githubinstall("raptorML")
 ```
 
 ## Usage
 
 As raptor ML create folder structures we cant compile code here
-directly. Examples will follow…
+directly. However after the example execution and image of the structure
+gives an overview
+
+``` r
+# forge()
+## creates a folder structure for data science projects and example is in the tests folder
+```
 
 ## Getting help
 
