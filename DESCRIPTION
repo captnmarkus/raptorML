@@ -1,14 +1,16 @@
 Package: raptorML
 Title: Machine Learning Framework
-Version: 0.0.1.0
+Version: 0.1.0
 Authors@R: 
-    person("Markus", "Maier", "captn.markus@gmail.com", role = c("aut", "cre"))
-Description: This package equips users with the ability to create a ready-to-use project structure for machine learning, promoting reproducibility and efficiency.
+    person("Markus", "Maier",, "captn.markus@gmail.com", role = c("aut", "cre"))
+Description: Equips users with the ability to create a ready-to-use project structure for machine learning, promoting reproducibility and efficiency. You use 'forge','catalog_load' and 'orchestrate' and will built your project, get the data and execute your main code file.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
@@ -17,3 +19,5 @@ Imports:
     readr,
     readxl,
     yaml
+LazyData: true
+VignetteBuilder: knitr
