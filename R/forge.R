@@ -109,7 +109,22 @@ forge <- function() {
   writeLines("", file.path(project_name, "README.Rmd"))
 
   # Creates an Rproj file template in root directory
-  writeLines("", file.path(project_name, paste0(project_name, ".Rproj")))
+  writeLines(c("Version: 1.0",
+               "",
+               "RestoreWorkspace: Default",
+               "SaveWorkspace: Default",
+               "AlwaysSaveHistory: Default",
+               "",
+               "EnableCodeIndexing: Yes",
+               "UseSpacesForTab: Yes",
+               "NumSpacesForTab: 2",
+               "Encoding: UTF-8",
+               "",
+               "RnwWeave: Sweave",
+               "LaTeX: pdfLaTeX",
+               "",
+               "AutoAppendNewline: Yes",
+               "StripTrailingWhitespace: Yes"),file.path(project_name, paste0(project_name, ".Rproj")))
 
   # Creates a .gitignore file in root directory with standard R ignore patterns
   writeLines(c(
@@ -121,12 +136,11 @@ forge <- function() {
 
   # Creates a main function template file in src directory
   writeLines(c(
-    "Define your packages",
-    "library(raptorML)"
+    "# Define your packages",
+    "library(raptorML)",
+    "# ",
+    "cat(\"This is a test!\")"
   ), file.path(project_name,"src", "_main_.R"))
 
   cat("Project structure created successfully.\n")
 }
-
-
-

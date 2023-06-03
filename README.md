@@ -46,5 +46,4 @@ directly. Examples will follow…
 ## Getting help
 
 If you encounter a clear bug, please file an issue with a minimal
-reproducible example on
-[GitHub](https://github.com/tidyverse/dplyr/issues).
+reproducible example on [GitHub](https://github.com/raptorML/issues).
