@@ -46,4 +46,4 @@ As raptor ML create folder structures we cant compile code here directly. Exampl
 
 ## Getting help
 
-If you encounter a clear bug, please file an issue with a minimal reproducible example on [GitHub](https://github.com/tidyverse/dplyr/issues).
+If you encounter a clear bug, please file an issue with a minimal reproducible example on [GitHub](https://github.com/raptorML/issues).

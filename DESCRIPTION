@@ -1,9 +1,9 @@
 Package: raptorML
-Title: This package equips users with the ability to create a ready-to-use project structure for machine learning, promoting reproducibility and efficiency. Alongside this, it offers various helper functions designed to enhance code reusability and streamline the machine learning workflow
+Title: Machine Learning Framework
 Version: 0.0.1.0
 Authors@R: 
     person("Markus", "Maier", , "captn.markus@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This package equips users with the ability to create a ready-to-use project structure for machine learning, promoting reproducibility and efficiency. Alongside this, it offers various helper functions designed to enhance code reusability and streamline the machine learning workflow
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
