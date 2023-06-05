@@ -26,3 +26,53 @@ You can install raptorML from GitHub using the devtools package:
 # library(devtools)
 # devtools::install_github("captnmarkus/raptorML")
 ```
+
+# Usage
+
+The forge() function:
+forge() is used to create a directory structure and files for a data science project. Here's an example of how to use it:
+
+``` r
+# Copy code
+raptorML::forge()
+```
+Upon running this function, you will be prompted to enter a name for your project. The function will then check if a directory with the entered name already exists, and if it does not, it will create the directory along with subdirectories and configuration files.
+
+The created directory structure is as follows:
+
+- `project_name/`: The main project directory.
+- `project_name/conf/`: Contains configuration files.
+- `project_name/data/`: Contains directories for various stages of data, like raw data, processed data, and model-ready data.
+- `project_name/docs/`: This is where you can put your documentation.
+- `project_name/logs/`: For storing log files.
+- `project_name/notebooks/`: For Jupyter notebooks or R scripts.
+- `project_name/src/`: Contains source code for the project
+
+The catalog_load() function:
+
+``` r
+# Copy code
+raptorML::catalog_load("dataset_name")
+```
+
+Replace "dataset_name" with the name of the dataset you want to load. The function will then check if the dataset is available in the catalog, and if it is, it will load the data based on its type, be it SQLDataSet, CSVDataset, or EXCELDataset.
+
+
+The orchestrate() function:
+
+``` r
+# Copy code
+raptorML::orchestrate()
+```
+
+Please refer to the raptorML documentation or the GitHub repo for more detailed information about the orchestrate() function.
+
+# Benefits
+
+The main benefit of using raptorML is that it streamlines the process of setting up machine learning projects by automating the creation of a well-organized project structure. This can save a lot of time and also helps ensure that your project is set up in a way that is conducive to efficient, reproducible research. The package also provides tools for managing data ingestion and code execution, further simplifying the process of setting up and running a project.
+
+# Future Developments
+
+The raptorML package is a simple tool as it is, so there's room for improvement. Future developments could include additional functions for automating more aspects of machine learning projects, such as model training and evaluation, and more extensive options for customization of the project structure. Also, more types of data could be supported in the catalog_load() function.
+
+Always stay tuned for updates on the raptorML GitHub page and consider contributing if you have ideas for improvements!
