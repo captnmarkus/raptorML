@@ -4,6 +4,8 @@
 # raptorML <img src="man/figures/logo.png" align="right" height="138" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/captnmarkus/raptorML/workflows/R-CMD-check/badge.svg)](https://github.com/captnmarkus/raptorML/actions)
 <!-- badges: end -->
 
 ## Overview
@@ -16,7 +18,7 @@ care of the data ingestion and executing of your code by providing
 production ready capabilities
 
 This package is designed with the aim of enhancing reproducibility,
-efficiency, and code reusability in machine learning projects, helping
+efficiency, and code re-usability in machine learning projects, helping
 you to focus on what’s important - building and refining your machine
 learning models.
 
@@ -35,15 +37,15 @@ To get a bug fix or to use a feature from the development version, you
 can install the development version of raptorML from GitHub.
 
 ``` r
-# library(githubinstall)
-# githubinstall("raptorML")
+# library(devtools)
+# devtools::install_github("captnmarkus/raptorML")
 ```
 
 ## Usage
 
 As raptor ML create folder structures we cant compile code here
-directly. However after the example execution and image of the structure
-gives an overview
+directly. However after a quoted example code an image of the project
+structure should give you an intuition.
 
 ``` r
 # forge()
