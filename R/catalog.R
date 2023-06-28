@@ -55,7 +55,29 @@ catalog_load <- function(dataset_name) {
     DBI::dbDisconnect(conn)
   } else if (config$type == "CSVDataset") {
     # Load data from a CSV file
-    data <- readr::read_delim(config$path, delim = config$sep,show_col_types = FALSE)
+    data <- readr::read_delim(config$path,
+                              delim = config$sep,
+                              quote = config$quote,
+                              escape_backslash = config$escape_backslash,
+                              escape_double = config$escape_double,
+                              col_names = config$col_names,
+                              col_types = config$col_types,
+                              col_select = config$col_select,
+                              id = NULL,
+                              locale = default_locale(),
+                              na = c("", "NA"),
+                              quoted_na = TRUE,
+                              comment = "",
+                              trim_ws = FALSE,
+                              skip = 0,
+                              n_max = Inf,
+                              guess_max = min(1000, n_max),
+                              name_repair = "unique",
+                              num_threads = readr_threads(),
+                              progress = show_progress(),
+                              show_col_types = should_show_types(),
+                              skip_empty_rows = TRUE,
+                              lazy = should_read_lazy())
   } else if (config$type == "EXCELDataset") {
     # Load data from an Excel file
     data <- readxl::read_excel(config$path, sheet = config$sheet)
