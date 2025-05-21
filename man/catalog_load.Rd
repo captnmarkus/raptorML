@@ -4,10 +4,18 @@
 \alias{catalog_load}
 \title{Load dataset from configuration}
 \usage{
-catalog_load(dataset_name)
+catalog_load(
+  dataset_name,
+  catalog_path = "conf/base/catalog.yaml",
+  credentials_path = "conf/credentials/credentials.yaml"
+)
 }
 \arguments{
 \item{dataset_name}{The name of the dataset to load as specified in the catalog}
+
+\item{catalog_path}{The path to the catalog YAML file. Defaults to "conf/base/catalog.yaml".}
+
+\item{credentials_path}{The path to the credentials YAML file. Defaults to "conf/credentials/credentials.yaml".}
 }
 \value{
 The loaded dataset as a data frame
@@ -20,5 +28,8 @@ as well as CSV and Excel files.
 \examples{
 \dontrun{
 df <- catalog_load("example_data")
+# df_custom_paths <- catalog_load("example_data",
+#                                 catalog_path = "conf/custom/catalog.yaml",
+#                                 credentials_path = "conf/custom/credentials.yaml")
 }
 }
