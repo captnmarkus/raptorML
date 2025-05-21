@@ -13,16 +13,11 @@ stops and returns an error message.
 }
 \description{
 This function asks the user for a project name and creates a new directory
-structure for the project. The created directories include 'conf', 'data',
-'docs', 'logs', 'notebooks', and 'src'. Within 'conf', the function creates
-'base' and 'credentials' subdirectories. Within 'data', the function creates
-'00_sql_files', '01_raw', '02_processed', and '03_model_ready' subdirectories.
-If a directory with the specified project name already exists in the working
-directory, the function stops and returns an error message. Additionally, it
-creates three YAML files: 'catalog.yaml', 'parameters.yaml' in the 'conf/base'
-directory, and 'credentials.yaml' in the 'conf/credentials' directory. It also
-creates a 'Readme.Rmd' file, an Rproj file named after the project in the project's
-root directory, and a .gitignore file with standard R ignore patterns.
+structure for the project, inspired by Kedro. Key directories include 'conf', 'data',
+'src', 'logs', 'notebooks', and 'docs'. It pre-populates 'conf/base' with
+'catalog.yaml' and 'parameters.yaml', 'conf/credentials' with 'credentials.yaml',
+and 'src' with '\emph{main}.R', 'nodes.R', and 'pipelines.R' templates to demonstrate
+a runnable example pipeline.
 }
 \examples{
 \dontrun{
